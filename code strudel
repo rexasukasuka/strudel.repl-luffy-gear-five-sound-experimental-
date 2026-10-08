@@ -1,0 +1,22 @@
+$: s("wt_digital_basique ").gain(0.9).room(1)
+
+ $:s("compurhythm1000_lt").gain(0.8).roomsize(2)
+    
+$: s("agogo:5 ").gain(9).room(5).slow(2)
+
+
+$: s("tom2_stick").gain(3).room(2).slow(1)
+
+$: s("mc303_fx").gain(2)
+
+
+ $: note("a e")
+ .vib("< 4 >:12")
+ .scope()
+
+ $: s("crackle*4")
+ .density("<0.2 0.04 >"
+ .slow(2))
+  .scope()
+
+ $:s(" pink*8 brown*4 ")._scope()
